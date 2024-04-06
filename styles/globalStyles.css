@@ -5,11 +5,13 @@ body {
 
 .navbar {
     background-color: #FFB3C6 !important;
+    
 }
 
 .navbar-nav {
     align-items: center;
     justify-content: center;
+    
 }
 
 .icons-bar-container {
@@ -97,4 +99,25 @@ body {
     width: 10px !important;
     height: 10px !important;
     border-radius: 50% !important;
+}
+
+.tituloProductos{
+    color: #FB6F92;
+    text-decoration: underline;
+    padding-left: 2%;
+
+}
+
+.images-container{
+    height: auto;
+    width: 100%;
+}
+
+.images-container .img-fluid{
+    width: 350px !important;
+    height: 350px !important;
+    margin: 2% !important;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
 }
