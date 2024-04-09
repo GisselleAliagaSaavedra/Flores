@@ -79,6 +79,12 @@ body {
     border-radius: 30px !important;
     background-color: #FFB3C6 !important;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    transition: all 400ms ease;
+}
+
+.card:hover{
+    background-color: #FB6F92;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0700em 0.0700em, rgba(0, 0, 0, 0.25) 0px 0.5em 2rem, rgba(255, 255, 255, 0.1) 0px 1px 3px 6px inset;
 }
 
 .card-title{
@@ -116,12 +122,19 @@ h3 {
     background-color: black !important;
 }
 
+/*BOTON FLOTANTE*/
+
 .container-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 1000;
 }
+
+.button:hover{
+    background-color: black;
+}
+
 .button {
     display: flex;
     align-items: center;
