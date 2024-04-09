@@ -60,7 +60,7 @@ body {
 
 .icon-bar {
     color: #FB6F92 !important;
-    font-size: 20px !important;
+    font-size: 30px !important;
     margin-right: 10px;
 }
 
@@ -137,4 +137,29 @@ body {
 
 .btn-hover:hover{
     background-color: black;
+}
+
+.container-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #FB6F92;
+    color: white !important;
+    border-radius: 50%;
+    border-color: #FB6F92;
+    text-decoration: none;
+}
+
+.icon-cart {
+    color: #ffff !important;
+    font-size: 30px !important;
+    margin-right: 10px;
 }
