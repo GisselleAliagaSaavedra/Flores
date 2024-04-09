@@ -125,16 +125,16 @@ body {
 }
 
 .btn-hover{
-    background-color: #FFB3C6;
+    background-color: #FB6F92;
     color: #ffffff;
     font-weight: bold;
     font-size: large;
-    padding: 10px 20px; 
+    padding: 20px 40px; 
     transition: background-color 0.3s;
     border-radius: 30px;
     text-decoration: none !important;
 }
 
 .btn-hover:hover{
-    background-color: #FB6F92;
+    background-color: black;
 }
