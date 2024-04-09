@@ -68,38 +68,7 @@ body {
     color: #ffffff !important;
 }
 
-.carousel-container {
-    height: auto;
-    width: 100%;
-}
-
-.carousel-image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: 50%;
-    padding: 20px;
-    object-fit: contain;
-    object-position: center center;
-}
-
-.carousel-control-next-icon,
-.carousel-control-prev-icon {
-    background-size: 200% 500% !important;
-}
-
-.icon-navigate-carousel {
-    color: #FB6F92 !important;
-    font-size: 30px !important;
-}
-
-.carousel-indicators [data-bs-target] {
-    background-color: #FB6F92 !important;
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 50% !important;
-}
+/*CARDS*/
 
 .text-center{
     color: #FB6F92;
@@ -124,17 +93,25 @@ body {
     padding: 20px;
 }
 
-.btn-hover{
-    background-color: #FB6F92;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: large;
-    padding: 30px 60px; 
-    transition: background-color 0.3s;
-    border-radius: 30px;
-    text-decoration: none !important;
+h3 {
+    color: #FB6F92 !important;
 }
 
-.btn-hover:hover{
-    background-color: black;
+
+.btn{
+    background-color: #FB6F92 !important;
+    color: #ffffff !important;
+    font-weight: bold !important;
+    font-size: large !important;
+    padding: 10px 20px !important;
+    border-color: #FFB3C6 !important;
+}
+
+.btn-primary{
+    border-radius: 50px !important;
+    width: 120px !important;
+}
+
+.btn-primary:hover{
+    background-color: black !important;
 }
