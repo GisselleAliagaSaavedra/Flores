@@ -81,21 +81,18 @@
     </nav>
 
 
-    <!--FOTO DE CARRITO EN CARRITO-->
+    <!--FOTO DE CARRITO EN CARRITO COLUMNA 1-->
     <div class="container py-5">
-        <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+        <div class="row-cols-1 row-cols-md-3 g-4 ">
             <div class="col">
                 <div class="card">
                     <img class="img-fluid" src="./assets/images/ramo de rosas.webp" alt="Ramos" title="Rosas rojas">
                     <div class="card-body">
                         <h5 class="card-title">Ramo de rosas rojas</h5>
-                        <p class="card-text">Lorem ipsum dolor, sit amet, aluminum consectetur adipisicing elit. Quam
-                            magni amet, soluta animi iste impedit id illum accusantium quod atque minus, quas illo iusto
-                            sint mollitia facere cum, accusamus asperiores.</p>
                     </div>
                     <div class="d-flex justify-content-around mb-5">
                         <h3>$16.000</h3>
-                        <button class="btn btn-primary">Agregar</button>
+                        <button class="btn btn-primary">+</button>
                     </div>
                 </div>
             </div>
@@ -103,13 +100,84 @@
     </div>
 
     <!--MENSAJE DE REGALO-->
-    <div class="form-control">
-        <div class="formulario">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+
+    <div class="container-cuadroRosa">
+        <div class="container sm-6">
+            <div class="row">
+                <div class="col-md-9">
+                    <h5>¿Desea envolver para regalo?</h5>
+                </div>
+                <div class="col-4">
+                    <div class="form-check">
+                        <input class="form-check-input" id="check1" name="listoCheck" type="radio">
+                        <label class="form-check-label" for="check1">Si</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" id="check2" name="listoCheck" type="radio">
+                        <label class="form-check-label" for="check2">No</label>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <form class="tamannoTextos">
+                        <label class="form-control-label" for="">De:</label>
+                        <input class="form-control mb-3" type="text" id="text" for="DE" placeholder="De">
+                        <label class="form-control-label" for="">Para:</label>
+                        <input class="form-control mb-3" type="text" id="text" for="PARA" placeholder="Para">
+                        <textarea class="form-control" type="text" id="text" for="Escribe el mensaje"
+                            placeholder="Escribe el mensaje"></textarea>
+                        <form>
+                </div>
+            </div>
         </div>
     </div>
 
+    <!--CUADRO TOTAL COLUMNA 2-->
+
+    <div class="container-cuadroPago">
+        <div class="container">
+            <h3>TOTAL</h3>
+            <h3>$16.990 CLP</h3>
+            <div class="container-tipoDoc">
+                <p><strong>Tipo de documento</strong></p>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="listoCheck" id="ticket">
+                    <label class="form-check-label" for="Boleta">Boleta</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                    <label class="form-check-label" for="Factura">Factura</label>
+                </div>
+            </div>
+            <div class="container-tipoPago">
+                <p class="mt-3"><strong>Método de pago</strong></p>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                    <label class="form-check-label" for="Transferencia">Transferencia</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                    <label class="form-check-label" for="débito">Tarjeta de débito</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                    <label class="form-check-label" for="crédito">Tarjeta de crédito</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                    <label class="form-check-label" for="Efectivo">Efectivo</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                    <label class="form-check-label" for="Varios pagos">Varios pagos</label>
+                </div>
+            </div>
+        <div class="btn-pago">
+            <a class="btn btn-primary" href="metodoPago.html" role="button">PAGAR</a>
+        </div>
+        </div>
+    </div>
 
 </body>
 
