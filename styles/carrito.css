@@ -115,10 +115,6 @@ h5{
     display: flex !important;
 }
 
-h3{
-    color: black !important;
-}
-
 .cuadroPago{
     background-color: #FFB3C6;
     display: flex;
@@ -126,4 +122,12 @@ h3{
     width: 300px;
     align-items: center !important;
     justify-content:center !important;
+}
+
+.containerReg{
+    height: 80%;
+}
+
+.fotosCarrito{
+    height: 50%;
 }

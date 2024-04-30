@@ -81,58 +81,65 @@
     </nav>
 
     <!--FOTO DE CARRITO EN CARRITO COLUMNA 1-->
-    <div class="container-2columnas">
-        <div class="container">
-            <div class="row justify-content-around">
-                <div class="col md-9">
-                    <img class="imagenCarrito" src="./assets/images/1.jpg" alt="imagen 1" title="imagen 1">
-
-                </div>
-                <div class="col-2">
-                    <div class="cuadroPago">
-                        <div>
-                            <h3>TOTAL</h3>
-                            <h3>$16.990 CLP</h3>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
+    <div class="container">
+        <div class="row">
+            <div class="col border">1</div>
+            <div class="col border">2</div>
+            <div class="col border">3</div>
+            <div class="col border">4</div>
+            <div class="col border">5</div>
+            <div class="col border">6</div>
+            <div class="col border">7</div>
+            <div class="col border">8</div>
+            <div class="col border">9</div>
+            <div class="col border">10</div>
+            <div class="col border">11</div>
+            <div class="col border">12</div>
         </div>
-
     </div>
 
-
-
-    <!--MENSAJE DE REGALO-->
-    <div class="container-cuadroRosa">
-        <div class="container">
-            <div class="row justify-content-around">
-                <div class="tituloRegalo col-md-9">
-                    <h5>¿Desea envolver para regalo?</h5>
-                </div>
-                <div class="col-4">
-                    <div class="form-check">
-                        <input class="form-check-input" id="check1" name="listoCheck" type="radio">
-                        <label class="form-check-label" for="check1">Si</label>
+<!--DOS COLUMNAS=PRIMERA COLUMNA 2 ROWS/ SEGUNDA COUMNA 1 ROW-->
+    <div class="container">
+        <div class="row">
+            <div class="col-8 border">1 cuadro fotos
+                <div class="row">
+                    <div class="col-4 border">
+                        1 foto
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" id="check2" name="listoCheck" type="radio">
-                        <label class="form-check-label" for="check2">No</label>
+                    <div class="col-4 border">
+                        2 foto
                     </div>
+                    <div class="col-4 border">
+                        3 foto
+                    </div> 
                 </div>
-                <div class="col-6">
-                    <form class="tamannoTextos">
-                        <label class="form-control-label" for="">De:</label>
-                        <input class="form-control mb-3" type="text" id="text" for="DE" placeholder="De">
-                        <label class="form-control-label" for="">Para:</label>
-                        <input class="form-control mb-3" type="text" id="text" for="PARA" placeholder="Para">
-                        <textarea class="form-control" type="text" id="text" for="Escribe el mensaje"
-                            placeholder="Escribe el mensaje"></textarea>
-                        <form>
+                <!--DIV ROW MENSAJE DE REGALO-->
+                <div class="row">
+                    <div class="col-6 border">
+                        mensaje regalo-checks
+                        <div class="form-check">
+                            <input class="form-check-input" name="listoCheck" type="radio">
+                            <label class="form-check-label">Si</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" name="listoCheck" type="radio">
+                            <label class="form-check-label">No</label>
+                        </div>
+                    </div>
+                    <div class="col-6 border">
+                        DE PARA
+                        <form class="ingresoTexto">
+                            <label class="form-control-label">De:</label>
+                            <input class="form-control mb-3" type="text" placeholder="De">
+                            <label class="form-control-label">Para:</label>
+                            <input class="form-control mb-3" type="text" placeholder="Para">
+                            <textarea class="form-control" type="text" placeholder="Escribe el mensaje"></textarea>
+                        </form>
+                    </div>
                 </div>
             </div>
+            <!--DIV CUADRO PAGO-->
+            <div class="col-4 border">2 cuadro pago</div>
         </div>
     </div>
 </body>
