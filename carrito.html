@@ -80,25 +80,7 @@
             </div>
     </nav>
 
-    <!--FOTO DE CARRITO EN CARRITO COLUMNA 1-->
-    <div class="container">
-        <div class="row">
-            <div class="col border">1</div>
-            <div class="col border">2</div>
-            <div class="col border">3</div>
-            <div class="col border">4</div>
-            <div class="col border">5</div>
-            <div class="col border">6</div>
-            <div class="col border">7</div>
-            <div class="col border">8</div>
-            <div class="col border">9</div>
-            <div class="col border">10</div>
-            <div class="col border">11</div>
-            <div class="col border">12</div>
-        </div>
-    </div>
-
-<!--DOS COLUMNAS=PRIMERA COLUMNA 2 ROWS/ SEGUNDA COUMNA 1 ROW-->
+    <!--DOS COLUMNAS=PRIMERA COLUMNA 2 ROWS/ SEGUNDA COUMNA 1 ROW-->
     <div class="container">
         <div class="row">
             <div class="col-8 border">1 cuadro fotos
@@ -111,10 +93,10 @@
                     </div>
                     <div class="col-4 border">
                         3 foto
-                    </div> 
+                    </div>
                 </div>
                 <!--DIV ROW MENSAJE DE REGALO-->
-                <div class="row">
+                <div class="row mensajeRegalo">
                     <div class="col-6 border">
                         mensaje regalo-checks
                         <div class="form-check">
@@ -136,12 +118,46 @@
                             <textarea class="form-control" type="text" placeholder="Escribe el mensaje"></textarea>
                         </form>
                     </div>
+
                 </div>
             </div>
             <!--DIV CUADRO PAGO-->
-            <div class="col-4 border">2 cuadro pago</div>
+            <div class="col-4 cuadroPago border">2 cuadro pago
+                <div class="text-center">
+                    <h3>TOTAL</h3>
+                    <h3>$</h3>
+                </div>
+                <div id="bills-container" class="tipoDoc">
+                    <p><strong>Tipo de documento</strong></p>
+                </div>
+                <div class="container-tipoPago">
+                    <p class="mt-3"><strong>Método de pago</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="listoCheck">
+                        <label class="form-check-label">Transferencia</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="listoCheck">
+                        <label class="form-check-label">Tarjeta de débito</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="listoCheck">
+                        <label class="form-check-label">Tarjeta de crédito</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="listoCheck">
+                        <label class="form-check-label">Efectivo</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="listoCheck">
+                        <label class="form-check-label">Varios pagos</label>
+                    </div>
+                </div>
+                <div class="btn-pago">
+                    <a class="btn btn-primary btn-pago" href="metodoPago.html" role="button">PAGAR</a>
+                </div>
+            </div>
         </div>
-    </div>
-</body>
 
-</html>
+        <script src="carrito.js"></script>
+</body>
