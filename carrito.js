@@ -28,6 +28,9 @@ const bills = [
     }
 ];
 
+//me falta crear el container bills-container
+//para que no salga el error de null en insertAdjacentHTML
+
 const renderBill = (bills) => {
     const billsContainer = document.getElementById('bills-container');
     bills.forEach(bill => {
@@ -36,7 +39,7 @@ const renderBill = (bills) => {
             <input class="form-check-input" type="radio" name="documentType" id="${bill.code}">
             <label class="form-check-label">${bill.name}</label>
         </div>
-        `;
+        `
         billsContainer.insertAdjacentHTML('beforeend', billHTML);
     });
 };
