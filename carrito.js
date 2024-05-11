@@ -45,21 +45,3 @@ const renderBill = (bills) => {
 };
 
 renderBill(bills);
-
-
-// navigator.geolocation.getCurrentPosition(function (position) {
-//     let latlng = new google.maps.LatLng(
-//         position.coords.latitude,
-//         position.coords.longitude,
-//     );
-//     let myOptions = {
-//         zoom: 8,
-//         center: latlng,
-//         mapTypeId: google.maps.MapTypeId.TERRAIN,
-//         disableDefaultUI: true,
-//     };
-//     let map = new google.maps.Map(
-//         document.querySelector("#map_canvas"),
-//         myOptions,
-//     );
-// });
