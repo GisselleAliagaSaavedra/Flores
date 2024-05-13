@@ -80,77 +80,86 @@
             </div>
     </nav>
 
-    <!--DOS COLUMNAS=PRIMERA COLUMNA 2 ROWS/ SEGUNDA COUMNA 1 ROW-->
-    <div class="container">
+    <!--FOTO DE CARRITO EN CARRITO COLUMNA 1-->
+    <div class="container py-5">
         <div class="row">
-            <div class="col-8 border">1 cuadro fotos
-                <div class="row">
-                    <div class="col-4 border">
-                        1 foto
-                    </div>
-                    <div class="col-4 border">
-                        2 foto
-                    </div>
-                    <div class="col-4 border">
-                        3 foto
+            <div class="col-md-8">
+                <div class="card">
+                    <img class="img-fluid"
+                        src="https://verdecora.es/blog/wp-content/uploads/2022/01/flores-exterior-invierno.jpg.webp"
+                        alt="Ramos" title="Rosas rojas">
+                    <h5 class="card-title">Ramo de rosas rojas</h5>
+                    <div class="card-body">
+                        <h3>$16.000</h3>
+                        <div class="btn-group" role="group">
+                            <button type="button" id="btnMinus" class="btn btn-primary mr-2">-</button>
+                            <span class="badge rounded-pill">1</span>
+                            <button type="button" id="btnPlus" class="btn btn-primary">+</button>
+                        </div>
                     </div>
                 </div>
-                <!--DIV ROW MENSAJE DE REGALO-->
-                <div class="row mensajeRegalo">
-                    <div class="col-6 border">
-                        mensaje regalo-checks
-                        <div class="form-check">
-                            <input class="form-check-input" name="listoCheck" type="radio">
-                            <label class="form-check-label">Si</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" name="listoCheck" type="radio">
-                            <label class="form-check-label">No</label>
-                        </div>
-                    </div>
-                    <div class="col-6 border">
-                        DE PARA
-                        <form class="ingresoTexto">
-                            <label class="form-control-label">De:</label>
-                            <input class="form-control mb-3" type="text" placeholder="De">
-                            <label class="form-control-label">Para:</label>
-                            <input class="form-control mb-3" type="text" placeholder="Para">
-                            <textarea class="form-control" type="text" placeholder="Escribe el mensaje"></textarea>
-                        </form>
-                    </div>
 
+                <!--MENSAJE DE REGALO-->
+                <div class="container-cuadroRosa">
+                    <div class="col-4 is-gift">
+                        <h5>¿Desea envolver para regalo?</h5>
+                        <div class="form-check">
+                            <input class="form-check-input" id="check1" name="listoCheck" type="radio">
+                            <label class="form-check-label" for="check1">Si</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" id="check2" name="listoCheck" type="radio">
+                            <label class="form-check-label" for="check2">No</label>
+                        </div>
+                    </div>
+                    <form class="col-8 gift-form">
+                        <label class="form-control-label" for="">De:</label>
+                        <input class="form-control mb-3" type="text" id="text" for="DE" placeholder="De">
+                        <label class="form-control-label" for="">Para:</label>
+                        <input class="form-control mb-3" type="text" id="text" for="PARA" placeholder="Para">
+                        <textarea class="form-control" id="textarea" for="mensaje" placeholder="Mensaje"></textarea>
+                    </form>
                 </div>
             </div>
-            <!--DIV CUADRO PAGO-->
-            <div class="col-4 cuadroPago border">2 cuadro pago
+
+            <!--CUADRO TOTAL COLUMNA 2-->
+            <div class="col-md-4 container-cuadroPago">
                 <div class="text-center">
                     <h3>TOTAL</h3>
-                    <h3>$</h3>
+                    <h3>$16.990 CLP</h3>
                 </div>
-                <div id="bills-container" class="tipoDoc">
+                <div class="container-tipoDoc">
                     <p><strong>Tipo de documento</strong></p>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="listoCheck" id="ticket">
+                        <label class="form-check-label" for="Boleta">Boleta</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                        <label class="form-check-label" for="Factura">Factura</label>
+                    </div>
                 </div>
                 <div class="container-tipoPago">
                     <p class="mt-3"><strong>Método de pago</strong></p>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="listoCheck">
-                        <label class="form-check-label">Transferencia</label>
+                        <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                        <label class="form-check-label" for="Transferencia">Transferencia</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="listoCheck">
-                        <label class="form-check-label">Tarjeta de débito</label>
+                        <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                        <label class="form-check-label" for="débito">Tarjeta de débito</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="listoCheck">
-                        <label class="form-check-label">Tarjeta de crédito</label>
+                        <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                        <label class="form-check-label" for="crédito">Tarjeta de crédito</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="listoCheck">
-                        <label class="form-check-label">Efectivo</label>
+                        <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                        <label class="form-check-label" for="Efectivo">Efectivo</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="listoCheck">
-                        <label class="form-check-label">Varios pagos</label>
+                        <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                        <label class="form-check-label" for="Varios pagos">Varios pagos</label>
                     </div>
                 </div>
                 <div class="btn-pago">
@@ -158,6 +167,9 @@
                 </div>
             </div>
         </div>
-
-        <script src="carrito.js"></script>
+    </div>
+    
+    <script src="carrito.js"></script>
 </body>
+</html>
+

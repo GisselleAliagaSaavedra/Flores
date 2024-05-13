@@ -5,13 +5,13 @@ body {
 
 .navbar {
     background-color: #FFB3C6 !important;
-    
+
 }
 
 .navbar-nav {
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .icons-bar-container {
@@ -67,40 +67,6 @@ body {
 .icon-bar:hover {
     color: #ffffff !important;
 }
-
-h3 {
-    color: #FB6F92 !important;
-}
-
-
-/*FORMULARIO  MENSAJE DE REGALO*/
-.container-cuadroRosa{
-    width: 50%;
-    background-color: #FFB3C6;
-    margin-left: 15% !important;
-    border-radius: 30px !important;
-    display: flex;
-}
-
-.form-check-input{
-    color: #FB6F92;
-    contain: content !important;
-}
-
-.form-control-label{
-    color: #FB6F92;
-    font-weight: bold;
-}
-
-.form-control{
-    width: fit-content;
-}
-
-h5{
-    padding: 2% 2% 2% 2%;
-    color: #FB6F92;
-}
-
 
 /*CARDS*/
 
@@ -193,19 +159,40 @@ h5 {
     color: #FB6F92;
 }
 
+/*CUADRO TOTAL*/
 
-.container{
-    margin: 5%;
-    height: 50%;
-}
-
-
-.mensajeRegalo{
+.container-cuadroPago {
     background-color: #FFB3C6;
     border-radius: 30px;
-    
 }
 
+.container {
+    justify-content: center;
+    align-items: center;
+}
+
+.container-tipoDoc {
+    color: #ffffff;
+}
+
+h3 {
+    padding: 2% 2% 2% 2%;
+    color: black;
+    font-weight: bolder;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.btn-group {
+    color: #ffffff !important;
+    font-weight: bold !important;
+    font-size: large !important;
+    padding: 10px 10px !important;
+    border-color: #FFB3C6 !important;
+    display: flex;
+    direction: row;
+    justify-content: space-between;
+}
 
 .btn-primary {
     border-radius: 20px !important;
@@ -219,8 +206,34 @@ h5 {
 
 }
 
-.cuadroPago{
-    justify-content: center !important;
-    align-items: center !important;
-    
+.btn-primary:hover {
+    background-color: black !important;
+}
+
+.container-tipoDoc {
+    color: #ffffff;
+}
+
+.container-tipoPago {
+    color: #ffffff;
+}
+
+.badge {
+    background-color: #FB6F92 !important;
+    color: #ffffff !important;
+    font-weight: bold !important;
+    font-size: 15px !important;
+    text-align: center !important;
+    line-height: 2.5 !important;
+    margin: 5px !important;
+}
+
+.is-gift {
+    padding: 5%;
+}
+
+.gift-form {
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
 }
