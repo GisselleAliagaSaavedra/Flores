@@ -11,9 +11,25 @@ function validarFormulario() {
         { id: "casa", mensajeId: "mensajeCasa" }
     ];
 
+    let camposLlenos = true;
+
     campos.forEach(campo => {
         const valor = document.getElementById(campo.id).value;
         document.getElementById(campo.mensajeId).textContent = valor === "" ? "*" : " ";
+        if (valor === "") {
+            camposLlenos = false;
+        }
     });
+
+    if (camposLlenos) {
+        const myModal = new bootstrap.Modal(document.getElementById('modalModal'));
+        myModal.show();
+    } else {
+        alert('Todos los campos deben estar rellenados.');
+    }
+
+    //aqui tengo un error>>salta el modal justo despues
+    //de la alerta sin esperar a poder rellenar los campos
+    //ARREGLAR DESPUES :c
 };
 
