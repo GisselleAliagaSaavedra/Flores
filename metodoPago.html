@@ -80,93 +80,97 @@
             </div>
     </nav>
 
-<!--FORMULARIO DE PAGO-->
-
-    <form>
+    <!--FORMULARIO DE PAGO-->
+    <form id="formPayment">
         <div class="row ">
             <div class="col-8">
                 <h4>Pagar como invitado</h4>
-
-                <input class="form-control mb-3" type="email" placeholder="Email">
+                <input class="form-control mb-3" type="email" id="email" placeholder="Email">
+                <span id="mensajeEmail"></span>
                 <h4>Información de envío</h4>
-                <input class="form-control mb-3" type="text" placeholder="Nombre">
-                <input class="form-control mb-3" type="text" placeholder="Apellidos">
-                <input class="form-control mb-3" type="text" placeholder="Dirección">
-                <input class="form-control mb-3" type="number" placeholder="Número">
-                <input class="form-control mb-3" type="text" placeholder="País">
-                <input class="form-control mb-3" type="text" placeholder="Región">
-                <input class="form-control mb-3" type="text" placeholder="Ciudad">
-                <input class="form-control mb-3" type="text" placeholder="Casa">
-                <textarea cols="130" rows="5" placeholder="Instrucciones especiales"></textarea>
+                <input class="form-control mb-3" type="text" id="nombre" placeholder="Nombre">
+                <span id="mensajeNombre"></span>
+                <input class="form-control mb-3" type="text" id="apellidos" placeholder="Apellidos">
+                <span id="mensajeApell"></span>
+                <input class="form-control mb-3" type="text" id="direccion" placeholder="Dirección">
+                <span id="mensajeDirecc"></span>
+                <input class="form-control mb-3" type="number" id="numero" placeholder="Número">
+                <span id="mensajeNumero"></span>
+                <input class="form-control mb-3" type="text" id="pais" placeholder="País">
+                <span id="mensajePais"></span>
+                <input class="form-control mb-3" type="text" id="region" placeholder="Región">
+                <span id="mensajeRegion"></span>
+                <input class="form-control mb-3" type="text" id="ciudad" placeholder="Ciudad">
+                <span id="mensajeCiudad"></span>
+                <input class="form-control mb-3" type="text" id="casa" placeholder="Casa">
+                <span id="mensajeCasa"></span>
+                <textarea cols="130" rows="5" id="textArea" placeholder="Instrucciones especiales"></textarea>
             </div>
 
-            <div class="containerBoleta col-4">
-                <div class="containerBoleta">
-                    <div class="container">
-                        <h3>TOTAL</h3>
-                        <h3>$16.990 CLP</h3>
-                        <div class="container-tipoDoc">
-                            <p><strong>Tipo de documento</strong></p>
+            <div class="col-4 container-boleta">
+                <h3>TOTAL</h3>
+                <h3>$16.990 CLP</h3>
+                <div class="container-tipoDoc">
+                    <p><strong>Tipo de documento</strong></p>
 
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="listoCheck" id="ticket">
-                                <label class="form-check-label" for="Boleta">Boleta</label>
-                            </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="listoCheck" id="ticket">
+                        <label class="form-check-label" for="Boleta">Boleta</label>
+                    </div>
 
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
-                                <label class="form-check-label" for="Factura">Factura</label>
-                            </div>
-                        </div>
-                        <div class="container-tipoPago">
-                            <p class="mt-3"><strong>Método de pago</strong></p>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
-                                <label class="form-check-label" for="Transferencia">Transferencia</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
-                                <label class="form-check-label" for="débito">Tarjeta de débito</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
-                                <label class="form-check-label" for="crédito">Tarjeta de crédito</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
-                                <label class="form-check-label" for="Efectivo">Efectivo</label>
-                            </div>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
-                                <label class="form-check-label" for="Varios pagos">Varios pagos</label>
-                            </div>
-                        </div>
-                        <div class="btn-pago">
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                PAGAR
-                            </button>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                        <label class="form-check-label" for="Factura">Factura</label>
+                    </div>
+                </div>
 
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                                aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Confirmación de pago
-                                            </h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            ¿Desea seguir con la transacción?
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary"
-                                                data-bs-dismiss="modal">Cancelar</button>
-                                            <button type="button" class="btn btn-primary">Pagar</button>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="container-tipoPago">
+                    <p class="mt-3"><strong>Método de pago</strong></p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                        <label class="form-check-label" for="Transferencia">Transferencia</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                        <label class="form-check-label" for="débito">Tarjeta de débito</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                        <label class="form-check-label" for="crédito">Tarjeta de crédito</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                        <label class="form-check-label" for="Efectivo">Efectivo</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="listoCheck" id="invoice">
+                        <label class="form-check-label" for="Varios pagos">Varios pagos</label>
+                    </div>
+                </div>
+                <div class="btn-pago">
+                    <button id="btnPayment" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalModal"
+                        onclick="validarFormulario()">
+                        PAGAR
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="modalModal" tabindex="-1" aria-labelledby="modalModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="modalModalLabel">Confirmación de pago
+                                </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                ¿Desea seguir con la transacción?
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary">Pagar</button>
                             </div>
                         </div>
                     </div>
@@ -175,9 +179,8 @@
         </div>
     </form>
 
-    <!-- Modal -->
 
-
+    <script src="metodoPago.js"></script>
 
 </body>
 
