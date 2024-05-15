@@ -89,20 +89,8 @@
     <div class="container py-5">
         <div class="row">
             <div class="col-md-8">
-                <div class="card">
-                    <img class="img-fluid"
-                        src="https://verdecora.es/blog/wp-content/uploads/2022/01/flores-exterior-invierno.jpg.webp"
-                        alt="Ramos" title="Rosas rojas">
-                    <h5 class="card-title">Ramo de rosas rojas</h5>
-                    <div class="card-body">
-                        <h3>$16.000</h3>
-                        <div class="btn-group" role="group">
-                            <button type="button" id="btnMinus" class="btn btn-primary mr-2">-</button>
-                            <span class="badge rounded-pill">1</span>
-                            <button type="button" id="btnPlus" class="btn btn-primary">+</button>
-                        </div>
-                    </div>
-                </div>
+                <div id="cartList"></div>
+                <!--productos agregados al carro-->
 
                 <!--MENSAJE DE REGALO-->
                 <div class="container-cuadroRosa">
@@ -128,7 +116,7 @@
             </div>
 
             <!--CUADRO TOTAL COLUMNA 2-->
-            <div class="col-md-4 container-cuadroPago">
+            <div id="bills-container" class="col-md-4 container-cuadroPago">
                 <div class="text-center">
                     <h3>TOTAL</h3>
                     <h3>$16.990 CLP</h3>
@@ -175,7 +163,7 @@
     </div>
     
     <script src="js/carrito.js"></script>
+    <script src="js/ramos.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
-

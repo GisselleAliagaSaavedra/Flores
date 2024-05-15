@@ -45,26 +45,13 @@ let products = [
 
 
 const renderBouquet = (products) => {
-    console.log('products render', products)
     const productContainer = document.getElementById('product-container');
+    
+    if (!productContainer) {
+        return
+    }
     if (products && products.length > 0) {
         products.forEach(product => {
-            //     const productHTML = `
-            //     <div class="col">
-            //         <div class="card">
-            //             <img class="img-fluid" src="${product.url}" alt="${product.title}" title="${product.title}">
-            //             <div class="card-body">
-            //             <h5 class="card-title">${product.title}</h5>
-            //             <p class="card-text">${product.thumbnailUrl}</p>
-            //             </div>
-            //             <div class="d-flex justify-content-around mb-5">
-            //             <h3>$${product.id}</h3>
-            //             <button data-name="${product.title}" data-price="${product.id}"
-            //             onclick="addToCart(this)" class="btn btn-primary">Agregar</button>
-            //             </div>
-            //         </div>
-            //     </div>
-            // `;
             const productHTML = `
                 <div class="col">
                     <div class="card">
@@ -75,7 +62,7 @@ const renderBouquet = (products) => {
                         </div>
                         <div class="d-flex justify-content-around mb-5">
                             <h3>$${product.price}</h3>
-                            <button data-name="${product.name}" data-price="${product.price}"
+                            <button data-name="${product.name}" data-price="${product.price}" data-image="${product.image}"
                                 onclick="addToCart(this)" class="btn btn-primary">Agregar</button>
                         </div>
                     </div>
@@ -88,5 +75,3 @@ const renderBouquet = (products) => {
 
 // fetchProducts();
 renderBouquet(products);
-
-

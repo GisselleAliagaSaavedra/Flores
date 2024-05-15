@@ -71,6 +71,13 @@
     text-decoration: underline;
 }
 
+#cartList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row !important;
+}
+
 .card {
     width: 50%;
     display: flex;
