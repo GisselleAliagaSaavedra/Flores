@@ -27,9 +27,4 @@ function validarFormulario() {
     } else {
         alert('Todos los campos deben estar rellenados.');
     }
-
-    //aqui tengo un error>>salta el modal justo despues
-    //de la alerta sin esperar a poder rellenar los campos
-    //ARREGLAR DESPUES :c
-};
-
+}
