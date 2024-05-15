@@ -37,13 +37,6 @@ let products = [
     }
 ];
 
-// async function fetchProducts() {
-//     const response = await fetch('https://jsonplaceholder.typicode.com/photos');
-//     const json = await response.json();
-//     renderBouquet(json)
-// }
-
-
 const renderBouquet = (products) => {
     const productContainer = document.getElementById('product-container');
     
