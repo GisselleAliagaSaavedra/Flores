@@ -1,0 +1,33 @@
+#map {
+    height: 400px;
+    width: 80%;
+    margin: 0 auto; /* Centra el mapa horizontalmente */
+    padding: 10px 0; /* Añade espacio arriba y abajo (opcional) */
+}
+.form-container {
+    max-width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+    background-color: #f9f9f9; /* Fondo suave */
+    border: 2px solid #ff69b4; /* Borde rosa */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease; /* Transición para el hover */
+}
+.form-container:hover {
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Efecto hover */
+}
+.label-custom {
+    color: #800080; /* Color morado para las etiquetas */
+}
+
+.btn-primary {
+    background-color: #ff69b4; /* Color de fondo del botón */
+    border-color: #ff69b4; /* Color del borde del botón */
+}
+.btn-primary:hover {
+    background-color: #ff1493; /* Color de fondo del botón al hacer hover */
+    border-color: #ff1493; /* Color del borde del botón al hacer hover */
+}
