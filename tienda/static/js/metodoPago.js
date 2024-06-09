@@ -1,29 +1,26 @@
+function mostrarMensaje(id, mensaje) {
+    document.getElementById(id).textContent = mensaje;
+}
+
 function validarFormulario() {
     const campos = [
         { id: "email", mensajeId: "mensajeEmail" },
         { id: "nombre", mensajeId: "mensajeNombre" },
-        { id: "apellidos", mensajeId: "mensajeApell" },
+        { id: "apellido", mensajeId: "mensajeApell" },
+        { id: "telefono", mensajeId: "mensajeTelefono" },
         { id: "direccion", mensajeId: "mensajeDirecc" },
-        { id: "numero", mensajeId: "mensajeNumero" },
-        { id: "pais", mensajeId: "mensajePais" },
         { id: "region", mensajeId: "mensajeRegion" },
-        { id: "ciudad", mensajeId: "mensajeCiudad" },
-        { id: "casa", mensajeId: "mensajeCasa" }
+        { id: "comuna", mensajeId: "mensajeComuna" }
     ];
 
-    let camposLlenos = true;
-
-    campos.forEach(campo => {
+    let camposLlenos = campos.every(campo => {
         const valor = document.getElementById(campo.id).value;
-        document.getElementById(campo.mensajeId).textContent = valor === "" ? "*" : " ";
-        if (valor === "") {
-            camposLlenos = false;
-        }
+        mostrarMensaje(campo.mensajeId, valor === "" ? "*" : " ");
+        return valor !== "";
     });
 
     if (camposLlenos) {
-        const myModal = new bootstrap.Modal(document.getElementById('modalModal'));
-        myModal.show();
+        new bootstrap.Modal(document.getElementById('modalModal')).show();
     } else {
         alert('Todos los campos deben estar rellenados.');
     }

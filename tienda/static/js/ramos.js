@@ -2,37 +2,37 @@ let products = [
     {
         "name": "Ramo de rosas rojas",
         "price": 25000,
-        "image": "./assets/images/ramo de rosas.webp",
+        "image": "../static/assets/images/ramo de rosas.webp",
         "description": "Lorem ipsum dolor, sit amet, aluminum consectetur adipisicing elit. Quam magni amet, soluta animi iste impedit id illum accusantium quod atque minus, quas illo iusto sint mollitia facere cum, accusamus asperiores."
     },
     {
         "name": "Ramo de rosas rosadas",
         "price": 18000,
-        "image": "./assets/images/6.png",
+        "image": "../static/assets/images/6.png",
         "description": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe, praesentium? Temporibus quod ullam dolorum quibusdam, ipsum excepturi nobis eius eum. Officiis ad quibusdam cum atque culpa sequi illo in amet."
     },
     {
         "name": "Ramo de tulipanes",
         "price": 20000,
-        "image": "./assets/images/TULIPS.webp",
+        "image": "../static/assets/images/TULIPS.webp",
         "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, minima aspernatur quidem veritatis dolor omnis nam odio architecto necessitatibus ipsum optio laborum, eligendi a, nostrum cum repudiandae quod itaque magni!"
     },
     {
         "name": "Ramo de lirios amarillos",
         "price": 12000,
-        "image": "./assets/images/LIRIOS RAMO.png",
+        "image": "../static/assets/images/LIRIOS RAMO.png",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum architecto impedit commodi sequi perferendis fuga facilis, eum natus tempore neque eligendi inventore nam optio exercitationem. Quas velit maxime autem repellat."
     },
     {
         "name": "Ramo de flores",
         "price": 15000,
-        "image": "./assets/images/ramo-variado-margaritas-y-tulipanes.webp",
+        "image": "../static/assets/images/ramo-variado-margaritas-y-tulipanes.webp",
         "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe magni a itaque fugit explicabo sit. Saepe id vero, fugit laudantium blanditiis assumenda atque, officia dignissimos explicabo commodi tempore rem quo."
     },
     {
         "name": "Ramo de flores rojas y amarillas",
         "price": 20000,
-        "image": "./assets/images/Gerberas.jpg",
+        "image": "../static/assets/images/Gerberas.jpg",
         "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores at perspiciatis nemo molestiae nisi provident natus voluptas. Delectus laborum quam quos excepturi, corrupti veritatis ipsum rem dolor est labore aliquid!"
     }
 ];

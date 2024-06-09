@@ -2,36 +2,36 @@ let productsCanastos = [
     {
         "name": "Rosas rosadas",
         "price": 20000,
-        "image": "./assets/images/canastos3.webp",
+        "image": "../static/assets/images/canastos3.webp",
         "description": "Lorem ipsum dolor, sit amet, aluminum consectetur adipisicing elit. Quam magni amet, soluta animi iste impedit id illum accusantium quod atque minus, quas illo iusto sint mollitia facere cum, accusamus asperiores."
     },
     {
         "name": "Flores rosadas",
         "price": 18000,
-        "image": "./assets/images/canastos2.webp",
+        "image": "../static/assets/images/canastos2.webp",
         "description": "Lorem ipsum dolor, sit amet, aluminum consectetur adipisicing elit. Quam magni amet, soluta animi iste impedit id illum accusantium quod atque minus, quas illo iusto sint mollitia facere cum, accusamus asperiores."
     },
     {
         "name": "Rosas rojas y lirios amarillos",
         "price": 25000,
-        "image": "./assets/images/canastos1.jpg",
+        "image": "../static/assets/images/canastos1.jpg",
         "description": "Lorem ipsum dolor, sit amet, aluminum consectetur adipisicing elit. Quam magni amet, soluta animi iste impedit id illum accusantium quod atque minus, quas illo iusto sint mollitia facere cum, accusamus asperiores."
     },
     {
         "name": "Rosas blancas",
         "price": 22000,
-        "image": "./assets/images/canastos4.webp",
+        "image": "../static/assets/images/canastos4.webp",
         "description": "Lorem ipsum dolor, sit amet, aluminum consectetur adipisicing elit. Quam magni amet, soluta animi iste impedit id illum accusantium quod atque minus, quas illo iusto sint mollitia facere cum, accusamus asperiores."
     },
     {
         "name": "Mini rosas amarillas",
         "price": 21000,
-        "image": "./assets/images/canastos5.webp",
+        "image": "../static/assets/images/canastos5.webp",
         "description": "Lorem ipsum dolor, sit amet, aluminum consectetur adipisicing elit. Quam magni amet, soluta animi iste impedit id illum accusantium quod atque minus, quas illo iusto sint mollitia facere cum, accusamus asperiores."
     },
     {"name": "Lirios blancos",
         "price": 26000,
-        "image": "./assets/images/canasto de lirios.webp",
+        "image": "../static/assets/images/canasto de lirios.webp",
         "description": "Lorem ipsum dolor, sit amet, aluminum consectetur adipisicing elit. Quam magni amet, soluta animi iste impedit id illum accusantium quod atque minus, quas illo iusto sint mollitia facere cum, accusamus asperiores."
     },
 ];

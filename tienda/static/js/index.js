@@ -1,27 +1,27 @@
 let productType = [
     {
         "name": "Ramos",
-        "image": "./assets/images/ramo de rosas.webp",
+        "image": "../static/assets/images/ramo de rosas.webp",
     },
     {
         "name": "Canastos",
-        "image": "./assets/images/canasto de lirios.webp",
+        "image": "../static/assets/images/canasto de lirios.webp",
     },
     {
         "name": "Flores",
-        "image": "./assets/images/Pensamiento.webp",
+        "image": "../static/assets/images/Pensamiento.webp",
     },
     {
         "name": "Árboles",
-        "image": "./assets/images/arboles.png",
+        "image": "../static/assets/images/arboles.png",
     },
     {
         "name": "Semillas",
-        "image": "./assets/images/semillas.webp",
+        "image": "../static/assets/images/semillas.webp",
     },
     {
         "name": "Hierbas",
-        "image": "./assets/images/romero.webp",
+        "image": "../static/assets/images/romero.webp",
     }
 ];
 

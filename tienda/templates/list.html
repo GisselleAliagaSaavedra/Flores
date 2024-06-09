@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Comunas</title>
+</head>
+<body>
+    <h1>Lista de Comunas</h1>
+    <ul>
+        {% for comuna in comunas %}
+            <li>{{ comuna.nombre }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
