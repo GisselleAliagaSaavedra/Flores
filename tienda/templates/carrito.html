@@ -78,7 +78,7 @@
                     </div>
                 </div>
                 <div class="btn-pago">
-                    <a class="btn btn-primary btn-pago" href="/carrito/prepago" role="button">PAGAR</a>
+                    <a class="btn btn-primary btn-pago" href="/carro/prepago" role="button">PAGAR</a>
                 </div>
             </div>
         </div>
@@ -86,5 +86,6 @@
 {% endblock %}
 
 {% block scripts %}
+    <script src="{% static 'js/carrito.js' %}" defer></script>
     {{ block.super }}
 {% endblock %}

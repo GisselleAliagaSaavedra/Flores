@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .models import Region, Commune, Category, Product, Customer, Order, OrderItem
 from django.http import HttpResponse, JsonResponse
 
@@ -21,7 +21,9 @@ def carro(request):
 def prepago(request):
     return render(request, "metodoPago.html")
 
-def listar_comunas(request):
-    comunas = Commune.objects.all()
-    return render(request, 'list.html', {'comunas': comunas})
+def products_by_category(request, category_name):
+    category = get_object_or_404(Category, name__iexact=category_name)
+    products = Product.objects.filter(category=category)
+    return render(request, 'productos.html', {'category': category, 'products': products})
+
 

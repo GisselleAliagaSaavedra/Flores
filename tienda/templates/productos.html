@@ -1,0 +1,49 @@
+
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block title %}{{ category.name }} | Florería Jazmín Chino{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/productos.css' %}">
+{% endblock %}
+
+{% block content %}
+    
+    <div class="container py-5">
+        <h3 class="text-center">{{ category.name }}</h3>
+        <div id="canastos-container" class="row row-cols-1 row-cols-md-3 g-4 py-5">
+            {% for product in products %}
+
+                <div class="col">
+                    <div class="card">
+                        <img class="img-fluid" src="{{ product.img.url }}" alt={{ product.name }} title={{ product.name }}>
+                        <div class="card-body">
+                            <h5 class="card-title">{{ product.name }}</h5>
+                            <p class="card-text">{{ product.description }}</p>
+                        </div>
+                        <div class="d-flex justify-content-around mb-5">
+                            <h3>{{ product.price }}</h3>
+                            <button data-name="{{ product.name }}" data-price="{{ product.price }}" data-image="{{ product.img.url }}" onclick="addToCart(this)" class="btn btn-primary">Agregar</button>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+    <!--BOTON FLOTANTE :3-->
+    <div class="container-btn">
+        <div class="carrito">
+            <a class="button" href="/carro">
+                <i class="icon-cart fa fa-shopping-cart"></i>
+            </a>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{% static 'js/carrito.js' %}" defer></script>
+    {{ block.super }}
+{% endblock %}

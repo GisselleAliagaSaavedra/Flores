@@ -9,9 +9,8 @@ urlpatterns = [
     path('canastos/', views.canastos),
     path('contacto/', views.contacto),
     path('carro/', views.carro),
-    path('carrito/prepago', views.prepago),
-
-    path('comunas/', views.listar_comunas, name='listar_comunas'),
+    path('carro/prepago', views.prepago),
+    path('productos/<str:category_name>', views.products_by_category, name='products_by_category'),
 ]
 
 
