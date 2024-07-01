@@ -1,0 +1,22 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block title %}Inicio de sesión | Florería Jazmín Chino{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<link rel="stylesheet" href="{% static 'css/auth.css' %}">
+{% endblock %}
+
+{% block content %}
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Iniciar sesión</button>
+  <p>¿No tienes una cuenta? <a href="{% url 'register' %}">Regístrate aquí</a></p>
+</form>
+{% endblock %}
+
+{% block scripts %}
+  {{ block.super }}
+  <script src="{% static 'js/index.js' %}" defer></script>
+{% endblock %}

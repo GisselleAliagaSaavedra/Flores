@@ -1,0 +1,66 @@
+label, p {
+    color: #800080; /* Cambia el color aquí al que desees */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 50px auto 0 auto;  /* Ajusta el margen superior a 50px */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input, form button {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+.form-group {
+    margin-bottom: 1em;
+}
+
+.form-group label {
+    margin-bottom: 0.5em;
+    color: #555;  /* Color por defecto */
+}
+
+/* Cambiar el color de los labels */
+.form-group label {
+    color: #ff6347; /* Color personalizado, puedes cambiarlo al que prefieras */
+}
+
+.form-control {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

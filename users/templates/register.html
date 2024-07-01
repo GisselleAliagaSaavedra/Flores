@@ -1,0 +1,23 @@
+
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block title %}Registro | Florería Jazmín Chino{% endblock %}
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/index.css' %}">
+<link rel="stylesheet" href="{% static 'css/auth.css' %}">
+{% endblock %}
+
+{% block content %}
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <button type="submit">Registrarte</button>
+</form>
+{% endblock %}
+
+{% block scripts %}
+  {{ block.super }}
+  <script src="{% static 'js/index.js' %}" defer></script>
+{% endblock %}
+
